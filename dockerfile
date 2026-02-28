@@ -1,9 +1,7 @@
-# Step 1: Use the official Nginx image from Docker Hub
+# Official Nginx image based on Alpine Linux
 FROM nginx:alpine
 
-# Step 2: Copy your website files into the Nginx HTML directory
-# This maps your local files to the location Nginx looks for them
+# Website files will be copied to this directory in the container
 COPY . /usr/share/nginx/html
 
-# Step 3: Expose port 80 (the default for web traffic)
 EXPOSE 80
